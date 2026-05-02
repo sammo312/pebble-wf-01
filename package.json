@@ -1,19 +1,19 @@
 {
-  "name": "my-pebble-app",
-  "author": "Your Name",
-  "version": "1.0.0",
+  "name": "ascii-clock",
+  "author": "sammo312",
+  "version": "1.3.0",
   "keywords": [
     "pebble-app"
   ],
   "private": true,
   "dependencies": {},
   "pebble": {
-    "displayName": "My App",
-    "shortName": "My App",
-    "longName": "My Pebble App",
-    "uuid": "e1ac2ab4-140e-4f98-a78a-4872c50b738d",
+    "displayName": "ASCII and Ye Shall Receive",
+    "shortName": "ASCII Watchface",
+    "longName": "ASCII and Ye Shall Receive",
+    "uuid": "95608711-43fe-4510-91ba-24fb88738872",
     "sdkVersion": "3",
-    "enableMultiJS": false,
+    "enableMultiJS": true,
     "targetPlatforms": [
       "basalt",
       "emery"
@@ -25,7 +25,14 @@
       "configurable"
     ],
     "messageKeys": [
-      "COLOR_INDEX"
+      "TIME_COLOR",
+      "ASCII_COLOR",
+      "FACE_BG_COLOR",
+      "DENSITY_INDEX",
+      "CELL_SIZE_INDEX",
+      "TOUCH_INTENSITY",
+      "TOUCH_DURATION",
+      "AMBIENT_TIMEOUT"
     ],
     "resources": {
       "media": [

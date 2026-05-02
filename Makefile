@@ -1,5 +1,9 @@
 .PHONY: build docker-build docker-run pt1 pt2
 
+# To test touch in QEMU, set PEBBLE_QEMU_PATH=$(HOME)/.local/share/pebble-qemu/qemu-pebble-wrapper.sh
+# once a 4.9.171+ SDK is published to sdk.repebble.com — current 4.9.169 firmware
+# boot-loops against QEMU 10.x's pebble-emery machine model.
+
 build:
 	pebble build
 
