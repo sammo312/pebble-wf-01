@@ -460,9 +460,7 @@ static void window_load(Window *window) {
   tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
 
 #if PBL_TOUCH
-  if (touch_service_is_enabled()) {
-    touch_service_subscribe(touch_handler, NULL);
-  }
+  touch_service_subscribe(touch_handler, NULL);
 #endif
 
   accel_tap_service_subscribe(accel_tap_handler);
@@ -479,9 +477,7 @@ static void window_unload(Window *window) {
   }
   s_animating = false;
 #if PBL_TOUCH
-  if (touch_service_is_enabled()) {
-    touch_service_unsubscribe();
-  }
+  touch_service_unsubscribe();
 #endif
   accel_tap_service_unsubscribe();
   tick_timer_service_unsubscribe();
